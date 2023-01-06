@@ -1,0 +1,7 @@
+Clustering with DBSCAN
+
+Create, upload and manage datasets. Try random datasets from public domain.
+
+Apply the density-based clustering algorithm to the data and download the output as a csv file.
+
+This version allows you to perform clustering on 3 numerical columns only.
