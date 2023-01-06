@@ -2,14 +2,11 @@
 
 This app is a Data Science tool for Exploratory Data Analysis (EDA) to be used locally.<br><br>
 
-
-Create, upload and manage datasets.<br>
-Try random datasets from public domain.<br>
-<br>Apply the density based clustering algorithm to the data and download the output as a csv file.
-<br><br>This version allows you to perform clustering on 3 numerical columns only.
-
-
 https://user-images.githubusercontent.com/105871709/211107465-35405023-6ab1-4899-bc65-9822f5d8b841.mp4
+
+Create, upload and manage datasets. Try random datasets from public domain.<br>
+Apply the density based clustering algorithm to the data and download the output as a csv file.
+<br>This version allows you to perform clustering on 3 numerical columns only.
 
 
 The user can connect to personal PostgreSQL databases db and db2. <br>
