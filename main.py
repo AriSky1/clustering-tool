@@ -209,6 +209,7 @@ def update_table(contents, click_create_new, click_random, click_load, click_row
         columns = [desc[0] for desc in cursor.description]
         df = pd.DataFrame(cursor.fetchall(), columns=columns)
         columns = [{'name': i, 'id': i, 'deletable': True, 'renamable': True} for i in df.columns]
+        df = df.fillna(df.mean())
         data = df.to_dict(orient='records')
         current_name = selection_rand
         cursor.close()
@@ -266,6 +267,9 @@ def save_to_db(n_clicks, value, data, columns):
     if n_clicks > 0:
         table_name = value
         df = pd.DataFrame(data, index=None, columns=columns)
+        print(df.dtypes)
+        # df = df.convert_dtypes().dtypes
+        print(df.dtypes)
         df.to_sql(table_name.lower(), con=engine,
                   if_exists='replace',
                   schema = 'public',
@@ -477,6 +481,7 @@ def make_graphs(n, data, x_data, y_data, eps, min_samples, dist):
         df_cl['Clusters'] = y_pred
         df_cl['Clusters'] = df_cl['Clusters'].astype(str)
         df_cl['id'] = dfx
+        print(df_cl)
 
         fig = px.scatter_3d(df_cl, x=df_cl.iloc[:, 0], y=df_cl.iloc[:, 1], z=df_cl.iloc[:, 2],
                             color='Clusters',
