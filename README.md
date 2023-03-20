@@ -1,6 +1,9 @@
 # ClusteringApp
 
-This app is a Data Science tool for Exploratory Data Analysis (EDA) to be used locally.<br><br>
+
+DASH / FLASK / POSTGRESQL / SCIKIT-LEARN
+
+This app is a Data Science tool for Exploratory Data Analysis (EDA).<br><br>
 
 https://user-images.githubusercontent.com/105871709/211107465-35405023-6ab1-4899-bc65-9822f5d8b841.mp4
 
