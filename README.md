@@ -1,7 +1,7 @@
 # ClusteringApp
 
 
-DASH / FLASK / POSTGRESQL / SCIKIT-LEARN
+Made with DASH / FLASK / POSTGRESQL / SCIKIT-LEARN
 
 This app is a Data Science tool for Exploratory Data Analysis (EDA).<br><br>
 
